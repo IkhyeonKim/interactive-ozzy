@@ -11,6 +11,7 @@ div {
 
 .ozzy-map-clickableArea{
   width: 100vw;
+  
 }
 
 /* Highlighting Image */
@@ -79,6 +80,13 @@ div {
   height: 300px;
   align-items: center;
   line-height: 24px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+
+  -webkit-animation-name: animateTop;
+  -webkit-animation-duration: 0.8s;
+  animation-name: animateTop;
+  animation-duration: 0.8s;
+  
 }
 
 /* The Close Button */
@@ -95,6 +103,17 @@ div {
     color: #000;
     text-decoration: none;
     cursor: pointer;
+}
+
+
+@-webkit-keyframes animateTop{
+  from {top: -480px; opacity: 0;}
+  to {top: 180px; opacity: 1;}
+}
+
+@keyframes animateTop{
+  from {top: -480px; opacity: 0;}
+  to {top: 180px; opacity: 1;}
 }
 
 
